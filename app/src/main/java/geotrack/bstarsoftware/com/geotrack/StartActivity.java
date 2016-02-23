@@ -103,7 +103,7 @@ public class StartActivity extends Activity implements LocationListener {
         latitudeTextView.setText("Lat: " + location.getLatitude());
         longitudeTextView.setText("Long: " + location.getLongitude());
         timeTextView.setText("Time: " + location.getTime());
-        HttpUtility.sendUpdate(connectivityManager, location, deviceId);
+        NetworkUtility.sendUpdate(connectivityManager, location, deviceId);
     }
 
     @Override
